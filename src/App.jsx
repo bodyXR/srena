@@ -1,66 +1,88 @@
-import React from 'react';
+import React from "react";
 
-import Head from "./componants/Head"
-import Hello from './componants/Hello';
-import Imgs from './componants/imgs';
-import Infos from './componants/infos';
-import Why from './componants/Why';
-import Way from './componants/Way';
-import Servises from './componants/servises';
-import Solution from './componants/Solution';
-import Phone from './componants/phone';
-import Meet from './componants/Meet';
-import Clients from './componants/Clients';
-import Drivers from './componants/drivers';
-import Contacts from './componants/Contacts';
-import Message from './componants/Message';
-import Footer from './componants/Footer';
-import { Col, Container, Row } from 'react-bootstrap';
+import Head from "./componants/Head";
+import Hello from "./componants/Hello";
+import Imgs from "./componants/imgs";
+import Infos from "./componants/infos";
+import Why from "./componants/Why";
+import Way from "./componants/Way";
+import Servises from "./componants/servises";
+import Solution from "./componants/Solution";
+import Phone from "./componants/phone";
+import Meet from "./componants/Meet";
+import Clients from "./componants/Clients";
+import Drivers from "./componants/drivers";
+import Contacts from "./componants/Contacts";
+import Message from "./componants/Message";
+import Footer from "./componants/Footer";
+import { Col, Container, Row, Stack } from "react-bootstrap";
 
 function App() {
   return (
     <>
-      <Head/> {/* {"👀"} */}
-      <Row className='d-flex bg flex-wrap'>
-          <Hello/>
-          <Imgs/>
-      </Row>
-      <Row className='d-lg-flex flex-wrap flex-row-reverse'> {/* {"👀"} */}
-        <Col className='d-flex flex-wrap' lg={7}>
-          <Infos/>
-          <Why/>
-        </Col>
-        <Col lg={4}>
-          <Way />
-        </Col>
-      </Row>
-      <Servises/> {/* {"👀"} */}
       <Container>
-        <Row className='d-lg-flex flex-wrap'>
+        <Head /> {/* {"👀"} */}
+      </Container>
+      <Container fluid className="bg">
+        <Container fluid="lg">
+          <Row className="   first__section pt-5">
+            <Col className="col-12 col-lg-6" style={{ marginTop: "80px" }}>
+              {/* <Stack style={{ height: "100%", justifyContent: "center" }}> */}
+              <Hello />
+              {/* </Stack> */}
+            </Col>
+            <Col className="col-12 col-lg-6">
+              <Imgs />
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+      <Container fluid="lg">
+        <Row className="flex-row-reverse">
+          {" "}
+          {/* {"👀"} */}
+          <Col className="d-flex flex-wrap ps-0" lg={7}>
+            <Infos />
+            <Why />
+          </Col>
+          <Col lg={5} className="pe-0">
+            <Way />
+          </Col>
+        </Row>
+      </Container>
+      <Container fluid>
+        <Container fluid="lg">
+          <Servises /> {/* {"👀"} */}
+        </Container>
+      </Container>
+      <Container>
+        <Row className="d-lg-flex flex-wrap">
           <Col lg={4}>
-            <Solution/>
+            <Solution />
           </Col>
           <Col>
-            <Phone/>
+            <Phone />
           </Col>
         </Row>
       </Container>
-      <Meet/> {/* {"👀"} */}
-      <Clients/> {/* {"👀"} */}
-      <Drivers/> {/* {"👀"} */}
-      <Container> {/* {"👀....."} */}
+      <Meet /> {/* {"👀"} */}
+      <Clients /> {/* {"👀"} */}
+      <Drivers /> {/* {"👀"} */}
+      <Container>
+        {" "}
+        {/* {"👀....."} */}
         <Row>
           <Col lg={7}>
-            <Contacts/>
+            <Contacts />
           </Col>
           <Col lg={5}>
-            <Message/>
+            <Message />
           </Col>
         </Row>
       </Container>
-      <Footer/>
+      <Footer />
     </>
   );
 }
 
-export default App
+export default App;

@@ -1,16 +1,33 @@
-import React from 'react'
-import { Col, Container, Image } from 'react-bootstrap'
+import React from "react";
+import { Col, Container, Image } from "react-bootstrap";
 
-import way from "../assets/way.png"
-import box from "../assets/box.png"
+import way from "../assets/way.png";
+import box from "../assets/box.png";
 
 const Way = () => {
   return (
-    <Container className='d-flex flex-wrap justify-content-center mt-3 pe-lg-5 '>
-          <Image src= {way} className="pe-lg-5 way" />
-          <Image className="position-absolute pb-4 box" src= {box}/>
-    </Container>    
-  )
-}
+    <div
+      className="d-flex flex-wrap justify-content-center mt-3 position-relative "
+      style={{
+        backgroundImage: `url(${way})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        height: "100%",
+      }}
+    >
+      <Image
+        className="position-absolute  "
+        src={box}
+        style={{
+          width: "102px",
+          height: "99px",
+          bottom: "-35px",
+          right: "-20px",
+        }}
+      />
+    </div>
+  );
+};
 
-export default Way
+export default Way;

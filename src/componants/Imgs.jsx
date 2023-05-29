@@ -1,24 +1,30 @@
-import React from 'react'
-import { Col, Container, Image, Row } from 'react-bootstrap'
+import React from "react";
+import { Col, Container, Image, Row, Stack } from "react-bootstrap";
 
-import tall from "../assets/tall.png"
-import car from "../assets/car.png"
-import bus from "../assets/bus.png"
+import tall from "../assets/tall.png";
+import car from "../assets/car.png";
+import bus from "../assets/bus.png";
 
 const Imgs = () => {
   return (
-    <div className='pb-4 d-flex flex-wrap mt-5 ms-3'style={{width:"55%" , marginBottom:"10vh"}}>
-        <Row>
-          <Col xs= {5} lg={3}>
-            <Image src={car} className='mt-4 ms-3' style={{width:"150px"}}/>
-            <Image src={bus} className='mt-2 ms-5' style={{width:"150px"}}/>
-          </Col>
-          <Col xs= {5} lg={1} >
-            <Image src={tall} className='mt-2 img' />
-          </Col>
-        </Row>
-    </div>
-  )
-}
+    <Stack
+      className="pb-4  mt-5  imgs__section "
+      direction="horizontal"
+      gap={2}
+      style={{ alignItems: "flex-start" }}
+    >
+      <div
+        className="mt-3 mt-lg-5 "
+        style={{ width: "40%", textAlign: "right", marginTop: "50px" }}
+      >
+        <Image src={car} style={{ width: "100%", marginBottom: "8px" }} />
+        <Image src={bus} style={{ width: "85%" }} />
+      </div>
+      <div style={{ flex: 1 }}>
+        <Image src={tall} style={{ width: "100%" }} className=" img" />
+      </div>
+    </Stack>
+  );
+};
 
-export default Imgs
+export default Imgs;
