@@ -1,0 +1,131 @@
+body {
+  background-color: blue;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.bg {
+  background-image: url("assets/bg1.png");
+  background-color: #cccccc00;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+ul {
+  list-style: none;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  margin-top: 9px;
+  width: 10px;
+  height: 10px;
+  background-color: #b5153a;
+  border-radius: 3px;
+  margin-left: -1.4em;
+}
+.service {
+  background-image: url("assets/card.png");
+  background-color: #ffffff00;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  position: relative;
+  width: 146.37px;
+}
+.meet {
+  height: 280px;
+  background-image: url("assets/curve.png");
+  background-color: #ffffff00;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  /* justify-content: space-around; */
+}
+.img {
+  width: 100%;
+}
+.way {
+  width: 52vw;
+}
+.box {
+  width: 18vw;
+  margin-top: 43.5vh;
+  margin-left: 42vw;
+}
+.servises {
+  width: 100vw;
+}
+.solution {
+  width: 100vw;
+}
+.curve {
+  background-image: url("assets/pink_curve.png");
+  background-color: #ffffff00;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.switch {
+  margin-top: 100vh;
+}
+.drivers {
+  padding-left: 10%;
+}
+.drivers p {
+  text-align: center;
+}
+.phone {
+  width: 73vw;
+  z-index: 2;
+}
+.rect {
+  width: 80vw;
+}
+@media (min-width: 1000px) {
+  .img {
+    width: 400%;
+  }
+  .way {
+    width: 37vw;
+    margin-left: 110px;
+  }
+  .box {
+    width: 10vw;
+    margin-top: 92vh;
+    margin-left: 32vw;
+  }
+  .servises {
+    width: 44vw;
+    margin-left: 20vw;
+  }
+  .switch {
+    margin-top: 80vh;
+  }
+  .meet {
+    height: 280px;
+    background-image: url("assets/curve.png");
+    background-color: #ffffff;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 450px;
+  }
+  .drivers {
+    padding-left: 30%;
+  }
+  .solution {
+    width: 25vw;
+  }
+  .phone {
+    width: 38vw;
+  }
+  .rect {
+    width: 40vw;
+  }
+}
