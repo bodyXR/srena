@@ -11,11 +11,11 @@ const Clients = () => {
         <div className='d-flex justify-content-center flex-column mb-5 pb-5'>
             <p className='fs-2 fw-bold mt-4 text-center mb-4'>Our Clients</p>
             <div className='d-flex justify-content-center'>
-                <p style={{color : "#EFDFE2"}} className = "ms-3 me-3 fs-1 fw-bold d-lg-block" >Srena<br/>سرينا</p>
+                <p style={{color : "#EFDFE2"}} className = "ms-3 me-3 fs-1 fw-bold d-lg-block d-none" >Srena<br/>سرينا</p>
                 <p style={{color : "#EFDFE2"}} className = "ms-3 me-3 fs-1 fw-bold" >Srena<br/>سرينا</p>
                 <p style={{color : "#EFDFE2"}} className = "ms-3 me-3 fs-1 fw-bold" >Srena<br/>سرينا</p>
                 <p style={{color : "#EFDFE2"}} className = "ms-3 me-3 fs-1 fw-bold" >Srena<br/>سرينا</p>
-                <p style={{color : "#EFDFE2"}} className = "ms-3 me-3 fs-1 fw-bold d-lg-block" >Srena<br/>سرينا</p>
+                <p style={{color : "#EFDFE2"}} className = "ms-3 me-3 fs-1 fw-bold d-lg-block d-none" >Srena<br/>سرينا</p>
             </div>
             <Container className='d-lg-flex justify-content-center'>
               <Col className='ps-5 ms-5' lg={3}>

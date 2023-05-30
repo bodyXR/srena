@@ -20,16 +20,17 @@ import { Col, Container, Row, Stack } from "react-bootstrap";
 function App() {
   return (
     <>
-      <Container>
-        <Head /> {/* {"👀"} */}
+      <Container fluid style={{ backgroundColor: "#FCF3F4" }}>
+        <Container >
+
+          <Head /> {/* {"👀"} */}
+        </Container>
       </Container>
       <Container fluid className="bg">
         <Container fluid="lg">
           <Row className="   first__section pt-5">
             <Col className="col-12 col-lg-6" style={{ marginTop: "80px" }}>
-              {/* <Stack style={{ height: "100%", justifyContent: "center" }}> */}
               <Hello />
-              {/* </Stack> */}
             </Col>
             <Col className="col-12 col-lg-6">
               <Imgs />
@@ -39,43 +40,43 @@ function App() {
       </Container>
       <Container fluid="lg">
         <Row className="flex-row-reverse">
-          {" "}
-          {/* {"👀"} */}
           <Col className="d-flex flex-wrap ps-0" lg={7}>
             <Infos />
             <Why />
           </Col>
-          <Col lg={5} className="pe-0">
+          <Col lg={5} className="pe-lg-0">
             <Way />
           </Col>
         </Row>
       </Container>
-      <Container fluid>
+      <Container fluid className="curve">
         <Container fluid="lg">
           <Servises /> {/* {"👀"} */}
         </Container>
       </Container>
       <Container>
         <Row className="d-lg-flex flex-wrap">
-          <Col lg={4}>
+          <Col lg={6}>
             <Solution />
           </Col>
-          <Col>
+          <Col lg={6}>
             <Phone />
           </Col>
         </Row>
       </Container>
-      <Meet /> {/* {"👀"} */}
+      <Container>
+        <Meet /> {/* {"👀"} */}
+      </Container>
       <Clients /> {/* {"👀"} */}
       <Drivers /> {/* {"👀"} */}
       <Container>
         {" "}
         {/* {"👀....."} */}
         <Row>
-          <Col lg={7}>
+          <Col lg={6} className="pe-0" id = "contacts">
             <Contacts />
           </Col>
-          <Col lg={5}>
+          <Col lg={6} className="ps-0" id="message" >
             <Message />
           </Col>
         </Row>

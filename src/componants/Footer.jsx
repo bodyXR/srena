@@ -1,19 +1,19 @@
 import React from 'react'
-import { Button, Container } from 'react-bootstrap'
+import { Button, Col, Container, Row } from 'react-bootstrap'
 
 const Footer = () => {
   return (
-    <Container className='d-flex justify-content-around pt-3 pb-3' style={{fontSize:"13px",fontWeight:600}} >
-        <Container className="">
-          <span>@2023</span>
-          <span>Srena</span>
-
-        </Container>
-        
-        <Container className=" ">
+    <Container  style={{fontSize:"13px",fontWeight:600}} >
+        <Row className='d-flex justify-content-between pt-3 pb-3'>
+          <Col className='col-2'>
+            <span>@2023</span>
+            <span>Srena</span>
+          </Col>
+          <Col className='col-8 col-lg-3 '>
             <span className=''>  Privacy Policy </span>
             <span className=''>Terms&Condditions</span> 
-        </Container>
+          </Col>
+        </Row>
     </Container>
   )
   // <a className='text-danger' href='#'>Top</a>

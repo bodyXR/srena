@@ -7,13 +7,12 @@ import box from "../assets/box.png";
 const Way = () => {
   return (
     <div
-      className="d-flex flex-wrap justify-content-center mt-3 position-relative "
+      className="d-flex flex-wrap justify-content-center mt-3 position-relative h-lg-100 way"
       style={{
         backgroundImage: `url(${way})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        height: "100%",
+        backgroundPosition: "center"
       }}
     >
       <Image

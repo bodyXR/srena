@@ -10,18 +10,20 @@ import road from "../assets/road.png"
 
 const Servises = () => {
   return (
-      <Container className='curve mb-5 w-100'>
+      <Container className='mb-5'>
             <div className='servises pt-5 mb-5'>
-            <p className='text-center fs-2 fw-bold mt-5 pe-5 me-3' style={{color : "#B5153A"}}>Srena Services</p>
-            <div className='d-flex flex-wrap justify-content-start mt-1 ms-4 w-100'>
-                {cards.map((card)=>{
-                    return(
-                        <div className="me-3 mt-3 service" key={cards.indexOf(card)}>
-                            <Image src={card.img} className='ms-5 mb-2' style={{width: "49.3px"}}/>
-                            <p style={{width: "146.37px" , fontSize:"13px",height:"50px"}} className='fw-bold mb-3 text-center' >{card.text}</p>
-                        </div>
-                    )
-                })}
+            <p className='text-center fs-2 fw-bold pe-4 mt-5' style={{color : "#B5153A"}}>Srena Services</p>
+            <div className='d-flex flex-wrap justify-content-start mt-1 w-100'>
+                <div className='d-flex flex-wrap justify-content-start mt-1 w-100'>
+                    {cards.map((card)=>{
+                        return(
+                            <div className="me-3 mt-3 service flex-1" key={cards.indexOf(card)}>
+                                <Image src={card.img} className='ms-5 mb-2' style={{width: "49.3px"}}/>
+                                <p style={{width: "146.37px" , fontSize:"13px",height:"50px"}} className='fw-bold mb-3 text-center' >{card.text}</p>
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
             <div className='d-flex justify-content-center mt-3 ms-3' >
                 <div className='ms-2'>

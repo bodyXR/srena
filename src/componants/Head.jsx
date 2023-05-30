@@ -6,7 +6,7 @@ import apple from "../assets/white.png";
 
 const Head = () => {
   return (
-    <Navbar style={{ backgroundColor: "#FCF3F4" }} className="pt-3 pb-3">
+    <Navbar className="pt-3 pb-3">
       <Navbar.Brand style={{ color: "#B5153A" }} className="fs-2 fw-bold">
         Srenaسرينا
       </Navbar.Brand>

@@ -5,7 +5,7 @@ import file from "../assets/file.png"
 
 const Solution = () => {
   return (
-    <div className="ms-3 mt-2 solution">
+    <div className="mt-2 solution">
         <p style={{color : "#B5153A"}} className = "fs-2 fw-bold">Our Solution</p>
         <p className = "fw-bold" style={{fontSize:"15px"}}> is tailored to your specific needs, whether you're transporting goods, employees or clients. </p>
         <ul>
